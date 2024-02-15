@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'coquette';
+    src: url('../resources/Oh Chewy.ttf') format('truetype');
+}
+html,
+body {
+    height: 100%;
+    background-color: #dbcff2;
+    font-family: 'coquette', sans-serif;
+}
+
+
+.contenedor {
+    height: 100%;
+    padding: 15%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imagen_principal {
+    align-self: center;
+    position: relative;
+}
+.fondo {
+    width: 100%;
+}
+
+.encima {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 105%;
+
+}
+
+
+.texto {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    font-family: 'coquette', sans-serif;
+    font-size: large;
+}
+
+/* Estilos para teléfono */
+@media (max-width: 767px) {
+
+    .contenedor {
+        padding: 5%;
+    }
+
+    .imagen_principal,
+    .texto,
+    .botones {
+        margin-bottom: 2px;
+        float: left;
+    }
+
+    .imagen_principal img{
+        max-width: 98%;
+        margin-top: 5%;
+    }
+    .encima {
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 130%;
+
+    }
+    button {
+        height: auto;
+        width: 80%;
+        max-width: 280px;
+        line-height: 1.2;
+        text-align: center;
+
+
+        display: flex;
+        font-size: 18px;
+        padding: 4%;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+
+    .contenedor {
+        padding: 10%;
+    }
+
+    p {
+        font-size: xx-large;
+    }
+
+    .botones button {
+        float: left;
+        margin: 0 15px;
+        font-size: xx-large;
+        width: auto;
+    }
+
+
+}
+
+
