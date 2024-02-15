@@ -2,7 +2,7 @@ const yesBtn = document.querySelector('#yesBtn');
 
 yesBtn.addEventListener('click',function () { //que va a pasar si se pulsa el boton si
     let html =`
-        '<div id="swal-image">
+        <div id="swal-image">
             <img src='../resources/cuandoSi.jpg' style="width: 200px; height: 150px">
             <h1>Vos y yo</h1>
             <h2>Vos y yo cuando vivamos juntos y me re jodas, mira es negro como vo</h2>
@@ -61,7 +61,7 @@ noBtn.addEventListener("touchstart", escapar);
 
 function mostrarAlertaCont() {
     let html =`
-        '<div id="swal-image">
+        <div id="swal-image">
             <img src='../resources/cuandoNo.jpg' style="width: 200px; height: 150px">
             <h1>>:(</h1>
             <h2>Ok puto, le das al no, come pija</h2>
